@@ -1,0 +1,446 @@
+/* to begin with  */
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: white;
+    font-family: 'Lora', serif;
+    min-width: 1000px;
+    text-align: center;
+    align-items: center;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    /* font-family: "Asap", sans-serif; */
+}
+
+body {
+    background: white;
+    font-family: "Lora", serif;
+}
+
+/* NAVIGATION BAR CODE ---- */
+.navbar {
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Lora', serif;
+    height: 5%;
+    transition: 500ms ease;
+
+}
+
+.navbar a {
+    /*margin-right: 50%;*/
+    font-size: 75%;
+    color: #2f9c95;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 9999;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    z-index: 9999;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* END OF NAVIGATION BAR CODE */
+
+
+/* Text Boxes 1 ----------------------- */
+.doubleTextBox {
+    margin: 1rem;
+    padding: 2rem 2rem;
+}
+
+.textBox1 {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    margin-bottom: 10%;
+}
+
+/* End of text Boxes 1 ----------------------- */
+
+/* About us text boxes */
+
+.textBox2 {
+    display: inline-block;
+    width: 1000px;
+    word-wrap: break-word;
+    text-align: right;
+    margin-right: 0%;
+}
+
+/* End of text Boxes 1 ----------------------- */
+
+.centerThis {
+    height: 250px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About us text boxes */
+/* INTRODUCTION ANIMATION */
+p {
+    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+}
+
+.container1 {
+    color: black;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation {
+    color: #2f9c95;
+    height: 55px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.animation>div>div {
+    /* padding: 0.25rem 0.25rem; */
+    height: 2.81rem;
+    margin-bottom: 2.81rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 10s infinite;
+}
+
+.first div {
+    background-color: none;
+}
+
+.second div {
+    background-color: none;
+    ;
+}
+
+.third div {
+    background-color: none;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: 0;
+    }
+
+    10% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: -5.62rem;
+    }
+
+    30% {
+        margin-top: -5.62rem;
+    }
+
+    40% {
+        margin-top: -11.24rem;
+    }
+
+    60% {
+        margin-top: -11.24rem;
+    }
+
+    70% {
+        margin-top: -5.62rem;
+    }
+
+    80% {
+        margin-top: -5.62rem;
+    }
+
+    90% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* END OF INTRODUCTION ANIMATION */
+
+
+.longLine {
+    width: 80%;
+    border-bottom: 2px solid black;
+    margin-bottom: 10%;
+}
+/* SCROLLING ANIMATION */
+
+
+section:nth-child(1) {
+    color: black;
+}
+
+section:nth-child(2) {
+    background: white;
+}
+
+section:nth-child(3) {
+    color: black;
+}
+
+section:nth-child(4) {
+    color: #42455a;
+    background: white;
+}
+
+section .container {
+    margin: 100px;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .text-container {
+    display: flex;
+    float: left;
+    margin-left: -3%;
+}
+
+section .text-container .text-box {
+    position: relative;
+    margin: 0px;
+    padding: 50px;
+    background: none;
+    color: black;
+    float: left;
+}
+
+section .text-container .text-box h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section .text-container {
+        flex-direction: column;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* FOOTER */
+/* FOOTER CSS */
+footer {
+    background: white;
+}
+
+.footer-distributed {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h3 {
+    color: #104547;
+    margin: 0;
+}
+
+/* Footer Center */
+.footer-center {
+    width: 35%;
+}
+
+.footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: large;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-center i.fa-envelope {
+    font-size: large;
+    line-height: 38px;
+}
+
+.footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-center p a {
+    color: #9ecbf5;
+    text-decoration: none;
+    ;
+}
+
+.footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #104547;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+/* Footer Right */
+.footer-right {
+    width: 20%;
+}
+
+.footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-company-about span {
+    display: block;
+    color: #104547;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-icons {
+    margin-top: 25px;
+}
+
+.footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #104547;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}

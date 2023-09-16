@@ -1,0 +1,442 @@
+/* to begin with  */
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #ebebeb;
+    font-family: 'Lora', serif;
+    min-width: 1000px;
+    text-align: center;
+    align-items: center;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    /* font-family: "Asap", sans-serif; */
+}
+
+body {
+    background: white;
+    font-family: "Lora", serif;
+}
+
+/* NAVIGATION BAR CODE ---- */
+.navbar {
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Lora', serif;
+    height: 5%;
+    transition: 500ms ease;
+
+}
+
+.navbar a {
+    /*margin-right: 50%;*/
+    font-size: 75%;
+    color: #2f9c95;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 9999;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+    z-index: 9999;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* END OF NAVIGATION BAR CODE */
+
+/* INTRO ANIMATION AND SCROLL ANIMATIONS */
+
+
+/* START WITH THE SCROLL ANIMATIONS */
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:nth-child(1) {
+    color: #e0ffff;
+}
+
+section:nth-child(2) {
+    color: #42455a;
+    background: white;
+}
+
+section:nth-child(3) {
+    color: #e0ffff;
+}
+
+section:nth-child(4) {
+    color: #42455a;
+    background: #f1f1f1;
+}
+
+section .container {
+    margin: 100px;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .text-container {
+    display: flex;
+    float: left;
+    margin-left: -3%;
+}
+
+section .text-container .text-box {
+    position: relative;
+    margin: 0px;
+    padding: 50px;
+    background: none;
+    color: black;
+    float: left;
+}
+
+section .text-container .text-box h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section .text-container {
+        flex-direction: column;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* OTHER THINGS.... */
+
+.textHeading {
+    color: #104547;
+    float: left;
+}
+
+.longLine {
+    width: 50%;
+    border: 1.5px solid #2f9c95;
+    margin-top: 3%;
+}
+
+.longLine2 {
+    width: 50%;
+    border: 1.5px solid #2f9c95;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.underline-on-hover:hover {
+    color: #2f9c95;
+    transform: translateY(-2px);
+
+}
+
+
+/* .button-66:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    color: #2f9c95;
+} */
+
+/* INTO THE TITLE ANIMATION */
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin-left: 0%;
+    padding-right: 10%;
+}
+
+.text-copy {
+    fill: none;
+    stroke: red;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #2f9c95;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #104547;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #2f9c95;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #104547;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #2f9c95;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+
+/* BUTTON code  */
+.button-66 {
+    background-color: #2f9c95;
+    border-radius: 4px;
+    border: 0;
+    /*box-shadow: rgba(47, 156, 149, 1) 0 -1px 3px 0 inset, rgba(16, 69, 71, 1) 0 3px 6px 0;*/
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inherit;
+    font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    min-height: 56px;
+    min-width: 120px;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button-66:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    color: #2f9c95;
+}
+
+@media (min-width: 768px) {
+    .button-66 {
+        padding: 16px 44px;
+        min-width: 150px;
+    }
+}
+
+
+.centerThis {
+    height: 250px;
+    margin-left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* END OF BUTTON CODE */
+/* FOOTER */
+/* FOOTER CSS */
+footer {
+  background: white;
+}
+.footer-distributed{
+	margin-left: 15%;
+  margin-right: 15%;
+	text-align: left;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+.footer-distributed h3{
+	color:  #104547;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer-center{
+	width: 35%;
+}
+.footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: large;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-center i.fa-envelope{
+	font-size: large;
+	line-height: 38px;
+}
+.footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-center p a{
+	color:  #9ecbf5;
+	text-decoration: none;;
+}
+.footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #104547;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* Footer Right */
+.footer-right{
+	width: 20%;
+}
+.footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-company-about span{
+	display: block;
+	color:  #104547;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-icons{
+	margin-top: 25px;
+}
+.footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #104547;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}

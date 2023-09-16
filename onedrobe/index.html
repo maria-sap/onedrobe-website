@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title id="title"></title>
+  <script src="script.js"></script>
+  <link href="" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="images/ONEDROBE_LOGO_PNG.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- Copied from https://css-tricks.com/snippets/css/typewriter-effect/ -->
+  
+<style>
+  /* GLOBAL STYLES */
+  body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0
+    }
+
+    to {
+      width: 100%
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+
+    from,
+    to {
+      border-color: transparent
+    }
+
+    50% {
+      border-color: #2f9c95
+    }
+  }
+</style>
+  
+<div class="typewriter" style="margin-top: 15%;">
+  <h1>Welcome... to ONEDROBE</h1>
+  <meta http-equiv = "refresh" content = "5; home.html" target="self" />
+</div>
+
+</html>

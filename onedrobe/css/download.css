@@ -1,0 +1,387 @@
+/* Main Layout ------------------------------------------------------------------------- */
+html, body{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #ebebeb;
+  font-family: 'Lora', serif;
+  min-width: 1000px;
+  text-align: center;
+  align-items: center;
+   
+}
+.clear{
+  clear:both;
+}
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  width: 100%
+}
+body {
+  font-size: 25px;
+  overflow-x: hidden;
+}
+p1 {
+  float: left;
+  font-family: perpetua;
+  font-size: 17px;
+  text-align: center;
+  height: 10%;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  background-color: white;
+  font-family: 'Lora', serif;
+  height: 5%;
+  transition: 500ms ease;
+
+}
+
+.navbar a {
+  /*margin-right: 50%;*/
+  font-size: 75%;
+  color: #2f9c95;
+  font-weight: bold;
+  padding: 14px 16px;
+  text-decoration: none;
+  z-index: 9999;
+  display:inline-block;
+  text-align:center;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  z-index: 9999;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  z-index: 9999;
+  opacity: 0.5;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 9999;
+  color: white;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.row {
+  display: inline;
+}
+.row2 {
+  display: flex;
+}
+.column1-left {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 15%;
+  position: relative;
+  float: left;
+}
+.column1-mid-left {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 15%;
+  position: relative;
+  float: left;
+}
+.column1-mid-right {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 15%;
+  position: relative;
+  float: left;
+}
+.column1-right {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 15%;
+  position: relative;
+  float: left;
+}
+.column {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.nav-contents {
+  margin-left: -2%;
+  margin-right: 2%;
+}
+
+/* END OF POSITIONING --------------------------------------------------------------------------------------------- */
+
+/* FONT STYLING ----------------------------------------------------------------------------------------------------------------------------------- */
+
+.headerTextDark {
+  color: #104547 ;
+
+}
+
+.button-66 {
+  background-color: #2f9c95;
+  border-radius: 4px;
+  border: 0;
+  /*box-shadow: rgba(47, 156, 149, 1) 0 -1px 3px 0 inset, rgba(16, 69, 71, 1) 0 3px 6px 0;*/
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button-66:hover {
+  background-color: #f5f7f6;
+  transform: translateY(-2px);
+  color: #2f9c95;
+}
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+/* DOWNLOAD PAGE CSS */
+/* INSTRUCTIONS CSS */
+.instruct-text {
+  background-color: white;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: 1px solid #104547;
+  color: #104547;
+}
+.steps {
+  margin-right: 15%;
+  margin-left: 5%;
+}
+.hr-solid {
+  margin: 5%;
+}
+
+/* DOWNLOAD LINKS CSS */
+.page-link {
+  color: #2f9c95;
+  text-decoration: none;
+}
+.page-link:hover {
+  opacity: 0.5;  
+}
+.download {
+  margin-top: 10%;
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.double-column1 {
+  margin-right: 4.5%;
+  margin-left: 25%;
+  width: 20%;
+  position: relative;
+  float: left;
+  border-right-width: 1px;
+  border-color:#104547;
+}
+.double-column2 {
+  margin-right: 25%;
+  margin-left: 4.5%;
+  width: 20%;
+  position: relative;
+  float: left;
+  border-left-width: 1px;
+  border-color:#104547;
+}
+.extension-link {
+  text-decoration: none;
+  text-align: center;
+  color:#2f9c95;
+}
+.extension-link:hover {
+  opacity: 0.5;
+}
+
+.separator {
+  background-color: white;
+}
+.hr-link-title {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0%;
+}
+.hr-links-end {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+.problem-link:hover {
+  opacity: 0.5;
+}
+
+
+/* FOOTER */
+/* FOOTER CSS */
+footer {
+  background: white;
+}
+.footer-distributed{
+	margin-left: 15%;
+  margin-right: 15%;
+	text-align: left;
+	padding: 55px 50px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+.footer-distributed h3{
+	color:  #104547;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer-center{
+	width: 35%;
+}
+.footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: large;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-center i.fa-envelope{
+	font-size: large;
+	line-height: 38px;
+}
+.footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-center p a{
+	color:  #9ecbf5;
+	text-decoration: none;;
+}
+.footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #104547;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+/* Footer Right */
+.footer-right{
+	width: 20%;
+}
+.footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+.footer-company-about span{
+	display: block;
+	color:  #104547;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-icons{
+	margin-top: 25px;
+}
+.footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #104547;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
